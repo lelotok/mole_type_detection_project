@@ -1,0 +1,23 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    height: 100vh;
+    background: rgb(4,25,6);
+    background: linear-gradient(0deg, rgba(4,25,6,1) 0%,
+     rgba(14,50,19,1) 56%, rgba(25,87,34,1) 100%); 
+
+}
+
+#display_img {
+
+    width: 224px;
+    height: 224px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+
+}
