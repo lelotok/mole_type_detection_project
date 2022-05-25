@@ -14,12 +14,13 @@
         
         <div id="display_img"></div>
         <div class = "form">
-            <form action="/predict", method="POST">
-                <input type="file" id="input_img" name="mole_img" 
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+                <input type="file" id="mole_img" name="mole_img" 
                 accept="image/png, image/jpg">
                 <p><button type="submit">Predict</button></p>
             </form>
-
+            <br>
+            <p>{{prediction_text}}</p>        
         </div>
 
     </body>
