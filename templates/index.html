@@ -12,16 +12,19 @@
 
         <h1>Mole prediction App</h1>
         
-        <div id="display_img"></div>
-        <div class = "form">
-            <form action="/predict" method="POST" enctype="multipart/form-data">
-                <input type="file" id="mole_img" name="mole_img" 
-                accept="image/png, image/jpg">
-                <p><button type="submit">Predict</button></p>
-            </form>
-            <br>
-            <p>{{prediction_text}}</p>        
-        </div>
+        
+            <div class ="form">
+                <form action="/predict" method="POST" enctype="multipart/form-data">
+                    <input type="file" id="mole_img" name="mole_img" 
+                    accept="image/png, image/jpg">
+                    <label for="mole_img">Choose a file</label>
+                    <p><button class="button" type="submit">Predict</button></p>
+                </form>
+                <br>
+                <p class="pred">{{prediction_text}}</p>        
+            </div>
+            
+            <div id="display_img"></div>
 
     </body>
 
